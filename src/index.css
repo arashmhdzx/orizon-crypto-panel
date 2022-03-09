@@ -1,6 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('./assets//fonts/TTMussels-DemiBold.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
+
+@layer base {
+    .option > div{
+        @apply border-t
+    }
+    .cardTitles{
+        @apply flex text-[#747474] text-[14px]
+    }
+    .xl-icons{
+        @apply flex mr-4 rounded-xl text-[18px] p-4
+    }
+    .amount{
+        @apply flex font-[TT-Mussels] font-bold text-[20px]
+    }
+    .summaryTitles{
+        @apply flex font-[TT-Mussels] px-6 text-[#747474] font-bold text-[15px] select-none cursor-pointer
+    }
+    .small-icons{
+        @apply flex p-2 rounded-lg items-center w-[36px] justify-center
+    }
+    
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Poppins',"PT Serif",-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -10,4 +37,27 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.mainPage-chart .gridlayer{
+    display: none;
+}
+.mainPage-chart .modebar{
+    display: none;
+}
+.mainPage-chart .xaxislayer-above{
+    display: none;
+}
+.mainPage-chart .yaxislayer-above{
+    display: none;
+}
+.xy .plot{
+    transform: none;
+    transform: scale(2.2,0.5);
+}
+.plotly .svg-container{
+    width: 100% !important;
+    height: 150px !important;
+}
+.main-svg{
+    height: 150px;
 }

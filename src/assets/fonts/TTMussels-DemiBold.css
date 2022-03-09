@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'TT-Mussels';
+    src: local('TT Mussels Demi Bold'), local('TT-Mussels-Demi-Bold'),
+        url('TTMussels-DemiBold.woff2') format('woff2'),
+        url('TTMussels-DemiBold.woff') format('woff'),
+        url('TTMussels-DemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
